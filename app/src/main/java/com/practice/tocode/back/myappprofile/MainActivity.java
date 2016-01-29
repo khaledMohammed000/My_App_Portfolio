@@ -13,12 +13,12 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button b1 ;
-    Button b2 ;
-    Button b3 ;
-    Button b4 ;
-    Button b5 ;
-    Button b6 ;
+    Button spotifyButt ;
+    Button scoreButt ;
+    Button libButt ;
+   // Button buildButt ;
+   // Button xyzButt ;
+   // Button capstoneButt ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,44 +36,47 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        b1= (Button) findViewById(R.id.button1);
-        b2= (Button) findViewById(R.id.button2);
-        b3= (Button) findViewById(R.id.button3);
-        b4= (Button) findViewById(R.id.button4);
-        b5= (Button) findViewById(R.id.button5);
-        b6= (Button) findViewById(R.id.button6);
+        spotifyButt= (Button) findViewById(R.id.button1);
+        scoreButt= (Button) findViewById(R.id.button2);
+        libButt= (Button) findViewById(R.id.button3);
+        // buildButt= (Button) findViewById(R.id.button4);
+        //  xyzButt= (Button) findViewById(R.id.button5);
+        // capstoneButt = (Button) findViewById(R.id.button6);
 
-        b1.setOnClickListener( new View.OnClickListener(){
+        spotifyButt.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "opens my spotify Streamer app", Toast.LENGTH_SHORT).show();
             }
         });
 
-        b2.setOnClickListener( new View.OnClickListener(){
+        scoreButt.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"opens my spotify Streamer app",Toast.LENGTH_SHORT).show();
             }
         });
 
-
-
-        b3.setOnClickListener( new View.OnClickListener(){
+        libButt.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"opens my Scores app",Toast.LENGTH_SHORT).show();
             }
         });
-
-        b4.setOnClickListener( new View.OnClickListener(){
+//
+/*From here on Implementing these using
+*separate methods for practicing
+* onClick attribute of Button
+*/
+/*
+        buildButt.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"opens my Build It Bigger app",Toast.LENGTH_SHORT).show();
             }
         });
 
-        b5.setOnClickListener( new View.OnClickListener(){
+        xyzButt.setOnClickListener( new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
@@ -81,13 +84,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        b6.setOnClickListener( new View.OnClickListener(){
+        capstoneButt.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"opens my CAPSTONE project app",Toast.LENGTH_SHORT).show();
             }
         });
-
+*/
     }
 
     @Override
@@ -111,5 +114,20 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+// defining methods for onClick attribute :)
+
+    public void buildButton(View view){
+        Toast.makeText(getApplicationContext(),"opens my Build It Bigger app",Toast.LENGTH_SHORT).show();
+    }
+
+    public void xyButton(View view){
+        Toast.makeText(getApplicationContext(),"opens my XYZ Reader app",Toast.LENGTH_SHORT).show();
+    }
+
+    public void capButton(View view){
+        Toast.makeText(getApplicationContext(),"opens my CAPSTONE project app",Toast.LENGTH_SHORT).show();
+    }
+
 }
 

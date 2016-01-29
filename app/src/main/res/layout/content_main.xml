@@ -12,7 +12,7 @@
     tools:context="com.practice.tocode.back.myappprofile.MainActivity"
     tools:showIn="@layout/activity_main"
     android:orientation="vertical"
-    android:background="#69F0AE">
+    android:background="#F44336">
 
     <TextView
         android:layout_width="match_parent"
@@ -30,18 +30,18 @@
     <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:gravity="center"
                 android:layout_marginTop="20dp"
-                android:layout_weight="1">
+                >
 
                     <Button
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:text="SPOTIFY STREAMER"
+                        android:text="@string/spotifyButton"
                         android:id="@+id/button1"
-                        android:background="#fe7700"
+                        android:background="#2979FF"
                         android:layout_weight="1"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"/>
@@ -49,9 +49,9 @@
                     <Button
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:text="SCORES APP"
+                        android:text="@string/scoresButton"
                         android:id="@+id/button2"
-                        android:background="#fe7700"
+                        android:background="#2979FF"
                         android:layout_weight="1"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"/>
@@ -59,9 +59,9 @@
                     <Button
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:text="LIBRARY APP"
+                        android:text="@string/libraryButton"
                         android:id="@+id/button3"
-                        android:background="#fe7700"
+                        android:background="#2979FF"
                         android:layout_weight="1"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"/>
@@ -69,32 +69,35 @@
                     <Button
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:text="BUILD IT BIGGER"
+                        android:text="@string/buildBiggerButton"
                         android:id="@+id/button4"
-                        android:background="#fe7700"
+                        android:background="#2979FF"
                         android:layout_weight="1"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"/>
+                        android:layout_marginBottom="10dp"
+                        android:onClick="buildButton"/>
 
                     <Button
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:text="XYZ READER"
+                        android:text="@string/xyzButton"
                         android:id="@+id/button5"
-                        android:background="#fe7700"
+                        android:background="#2979FF"
                         android:layout_weight="1"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"/>
+                        android:layout_marginBottom="10dp"
+                        android:onClick="xyButton"/>
 
                     <Button
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:text="CAPSTONE: MY OWN APP"
+                        android:text="@string/capstoneButton"
                         android:id="@+id/button6"
-                        android:background="#fb0b03"
-                        android:layout_weight="1"
+                        android:background="#FFFF00"
+                        android:layout_weight="2"
                         android:layout_marginTop="10dp"
-                        android:layout_marginBottom="10dp"/>
+                        android:layout_marginBottom="10dp"
+                        android:onClick="capButton"/>
 
             </LinearLayout>
     </ScrollView>
