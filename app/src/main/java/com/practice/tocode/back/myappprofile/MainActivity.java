@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        spotifyButt= (Button) findViewById(R.id.button1);
-        scoreButt= (Button) findViewById(R.id.button2);
-        libButt= (Button) findViewById(R.id.button3);
+        spotifyButt= (Button) findViewById(R.id.SpotifyButtonID);
+        scoreButt= (Button) findViewById(R.id.ScoresButtonID);
+        libButt= (Button) findViewById(R.id.LibraryButtonID);
         // buildButt= (Button) findViewById(R.id.button4);
         //  xyzButt= (Button) findViewById(R.id.button5);
         // capstoneButt = (Button) findViewById(R.id.button6);
